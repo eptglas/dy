@@ -11,21 +11,7 @@ PINK_COLOR='\e[1;35m'
 SHAN='\e[1;33;5m'
 RES='\e[0m'
 
-if command -v opkg >/dev/null 2>&1; then
-  if command -v docker >/dev/null 2>&1; then
-    check_docker="exist"
-  else
-    if [ -e "/sbin/procd" ]; then
-      check_procd="exist"
-    else
-      echo -e "\r\n${RED_COLOR}出错了，无法确定你当前的 Openwrt 发行版。${RES}\r\n"
-      exit 1
-    fi
-  fi
-else
-  echo -e "\r\n${RED_COLOR}出错了，无法确定你当前的 Openwrt 发行版。${RES}\r\n"
-  exit 1
-fi
+
 # 获取挂载路径
 if [ "$check_docker" = "exist" ]; then
   mount_root_path=$(grep -A1 "source_path\s*=\s*\"/\"" /Config/config.toml | grep "mount_point" | awk -F'["]' '{print $2}')
