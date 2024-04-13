@@ -242,7 +242,7 @@ DOCKER() {
     --restart unless-stopped \
     --env CLOUDDRIVE_HOME=/Config \
     -v /CloudNAS:/CloudNAS:shared \
-    -v /Config:/Config \
+    -v /run/desktop/mnt/host/c/UserFiles/containers/clouddrive2/Config:/Config \
     -v /media:/media:shared \
     --network bridge \
     -p 19799:19798 \
