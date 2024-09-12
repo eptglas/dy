@@ -1,0 +1,16 @@
+host, api.biliapi.com, Shawn
+host, api.biliapi.net, Shawn
+host, api.bilibili.com, Shawn
+host, app.biliapi.com, Shawn
+host, app.biliapi.net, Shawn
+host, app.bilibili.com, Shawn
+host, grpc.biliapi.net, Shawn
+host, m.bilibili.com, Shawn
+host, upos-hz-mirrorakam.akamaized.net, Shawn
+host, www.bilibili.com, Shawn
+host-keyword, cn-hk-eq-bcache-, Shawn
+host, cache.video.iqiyi.com, Shawn
+ip-cidr, 116.211.202.206/32, Shawn
+ip-cidr, 116.211.202.216/32, Shawn
+host-suffix, api.mgtv.com, Shawn
+host, mobileso.bz.mgtv.com, Shawn
