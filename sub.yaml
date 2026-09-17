@@ -1,0 +1,308 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+hosts:
+  time.facebook.com: 17.253.84.125
+  time.android.com: 17.253.84.125
+proxies:
+- type: anytls
+  name: 香港
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 美国
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 新加坡
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 德国
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 英国
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 法国
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 日本
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 加拿大
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 巴西
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 韩国
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 意大利
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 挪威
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 瑞典
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 澳大利亚
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 印度
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 乌克兰
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 墨西哥
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 俄罗斯
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 新西兰
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 马来西亚
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 泰国
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 菲律宾
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 西班牙
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 瑞士
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 阿联酋
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 爱尔兰
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: anytls
+  name: 印尼
+  server: 6ivh.pnuqcnp.cn
+  port: 443
+  udp: true
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  skip-cert-verify: true
