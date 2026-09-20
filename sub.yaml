@@ -1,841 +1,1028 @@
 port: 7890
 socks-port: 7891
 allow-lan: false
-mode: Rule
+mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 unified-delay: true
+
 hosts:
   time.facebook.com: 17.253.84.125
   time.android.com: 17.253.84.125
+
 proxies:
-- type: anytls
-  name: 香港
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 美国
-  server: awefd2313fefarg23fr24.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 新加坡
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 德国
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 英国
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 法国
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 日本
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 加拿大
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 巴西
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 韩国
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 意大利
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 挪威
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 瑞典
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 澳大利亚
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 印度
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 乌克兰
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 墨西哥
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 俄罗斯
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 新西兰
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 马来西亚
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 泰国
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 菲律宾
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 西班牙
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 瑞士
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 阿联酋
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 爱尔兰
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: anytls
-  name: 印尼
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  skip-cert-verify: true
-- type: 'vless'
-  name: 'AU-1'
-  server: '207.57.133.51'
-  port: 29896
-  uuid: '3767d445-9012-4f95-90ee-b5f15301dfe0'
-  encryption: ''
-  tls: true
-  servername: 'www.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'k_rgz9OgfRvruve7uGVmd8tHbDxS1h_Yh9C7FL2qHls'
-  network: 'tcp'
-- type: 'vless'
-  name: 'AU-2'
-  server: '207.57.135.28'
-  port: 27659
-  uuid: 'ecee6ef1-5172-4543-bf81-e4aaf64db01c'
-  encryption: ''
-  tls: true
-  servername: 'www.paypal.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg'
-  network: 'tcp'
-- type: 'vless'
-  name: 'AU-3'
-  server: '45.152.65.68'
-  port: 37574
-  uuid: 'e2353f83-9a40-4b46-82e1-666b1652d479'
-  encryption: ''
-  tls: true
-  servername: 'www.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI'
-  network: 'tcp'
-- type: 'vless'
-  name: 'AU-4'
-  server: '45.152.66.160'
-  port: 2581
-  uuid: '600d0970-77e5-4b57-8a88-a5b623c5a3d7'
-  encryption: ''
-  tls: true
-  servername: 'www.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'sJMVQ27QqDnyTPtHC02hVfJK1Ot42YsyLm47eHnLgV8'
-  network: 'tcp'
-- type: 'vless'
-  name: 'AU-5'
-  server: '68.64.183.49'
-  port: 50045
-  uuid: '72f59ca4-df5d-4ab1-af97-3e0a10ba56fd'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'cxzKVlA9i0WAztJ9QJ0v4nactMJKLXDyzJd00hBFGQ4'
-  network: 'tcp'
-- type: 'vless'
-  name: 'CN-1'
-  server: 'www.microsoft.com'
-  port: 443
-  uuid: '8f9dc380-fa9e-46e1-93c5-016987cbd17c'
-  encryption: ''
-  tls: true
-  servername: 'microsoft.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'TsUbtUAeEG2WvSJaS-LOnI9Zx8i-QWI8bfvI212caG4'
-  network: 'tcp'
-- type: 'vless'
-  name: 'DE-1'
-  server: '207.57.135.42'
-  port: 30852
-  uuid: '10fdf9ce-3304-47cf-874b-9a3be30d5030'
-  encryption: ''
-  tls: true
-  servername: 'www.paypal.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'HN9gCD2plpOr5jSNJfv9Xcl2Zjj-AKvfbNmLBNYWcUc'
-  network: 'tcp'
-- type: 'vless'
-  name: 'DE-2'
-  server: '207.57.135.124'
-  port: 2128
-  uuid: '630630d0-35eb-41b1-a7e9-90ca7e5c897f'
-  encryption: ''
-  tls: true
-  servername: 'www.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '0zFniJLY80LQ5zKKB-X6r-tpHgAI6yqUVxJFQGG9SUM'
-  network: 'tcp'
-- type: 'vless'
-  name: 'DE-3'
-  server: '193.134.211.247'
-  port: 29417
-  uuid: '1c1d0af7-c77b-4fb2-a1a4-fac03cc6c483'
-  encryption: ''
-  tls: true
-  servername: 'www.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'n9zqA9DrsO1bHnC_e2_e9MAxpyPdC_EA06Dm_rw4oWY'
-  network: 'tcp'
-- type: 'vless'
-  name: 'DE-4'
-  server: '68.64.183.179'
-  port: 53517
-  uuid: '0473ce6d-65e6-4ee2-a030-9e7a006f7921'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'rlAsfb-BXMZTnJpvvDrVkP-FO7Ll4-7sWVDPD7GThX4'
-  network: 'tcp'
-- type: 'vless'
-  name: 'DE-5'
-  server: '45.145.228.155'
-  port: 2574
-  uuid: '032b96c6-752f-4cff-88d1-fad817b0dad3'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'JXdqcykVt3Ue2ToOemH_AHoZUnQKbGIzaUmeZY7o32Y'
-  network: 'tcp'
-- type: 'vless'
-  name: 'FR-1'
-  server: '68.64.180.201'
-  port: 35957
-  uuid: 'ebc2c010-91e2-491d-875b-81de66a01590'
-  encryption: ''
-  tls: true
-  servername: 'www.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '79XmdoMC-YDcAhXMX6TGYfajcPWxVTSwIpbP0-QdMV8'
-  network: 'tcp'
-- type: 'vless'
-  name: 'FR-2'
-  server: '68.64.182.58'
-  port: 44407
-  uuid: '7c14a115-019f-4d67-8c7c-6f6814fb5610'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '1jRHait01lfgKnhfctcvx6EbGtvBxyZyi4JMcIl3qzI'
-  network: 'tcp'
-- type: 'vless'
-  name: 'FR-3'
-  server: '207.57.133.53'
-  port: 51135
-  uuid: '87f0cd64-02c8-49e7-b07a-349afed26693'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko'
-  network: 'tcp'
-- type: 'vless'
-  name: 'GB-1'
-  server: '45.145.229.184'
-  port: 29680
-  uuid: 'a6eae9b3-15eb-455f-a5f1-b73b2d304a32'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'PcmyuWGLbzBiTAqTuui0FSq3DUa6SIXzbDFARaeV23U'
-  network: 'tcp'
-- type: 'vless'
-  name: 'GB-2'
-  server: '38.207.177.203'
-  port: 24681
-  uuid: '5d2a0ea5-9563-4778-aed4-c97ec0e5f2a8'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 't-BhtrNH7C1zTuLOuBu4tXeIv3JR-cN88pVFywIkti4'
-  network: 'tcp'
-- type: 'vless'
-  name: 'GB-3'
-  server: '68.64.180.244'
-  port: 14738
-  uuid: '416c5142-667c-4213-a826-02185a3030b3'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '9fmJUGDBBcdT0WITLiZtF7mKKDnzfQ8kvBj0r5nIZyc'
-  network: 'tcp'
-- type: 'vless'
-  name: 'GB-4'
-  server: '207.57.131.82'
-  port: 42038
-  uuid: '451ae20e-adca-4d00-bf12-9572f58f181b'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'uK4Syxig1VpR42JEkbld2ZIaymNkt5MW4UMt21LsaRA'
-  network: 'tcp'
-- type: 'vless'
-  name: 'GB-5'
-  server: '45.152.66.168'
-  port: 27906
-  uuid: 'c1cbaa45-23ad-4113-8d9f-c66ec5ec3960'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'zw-86s4VfPvHEbmPeIA_0U0rFYiNlkmR9ky2y23fvWk'
-  network: 'tcp'
-- type: 'vless'
-  name: 'HK-1'
-  server: '207.57.131.116'
-  port: 60156
-  uuid: 'd42830a2-4a5f-4f55-bd01-fc3d2651505e'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '0WCIcNPaAc_UqgQmKptY2vvQKSCjz7LkoG6YEgtzuFs'
-  network: 'tcp'
-- type: 'vless'
-  name: 'HK-2'
-  server: '207.57.133.55'
-  port: 2084
-  uuid: '1b2bea38-961b-4e00-a6a2-d2065c4f1d32'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'My-6-pYesZLk3VntObe0KlYjiIqsLGvNN9KQ8FDPjAA'
-  network: 'tcp'
-- type: 'vless'
-  name: 'HK-3'
-  server: '45.145.229.234'
-  port: 45905
-  uuid: '83de2a89-7b91-47ca-8305-5d8acf48025a'
-  encryption: ''
-  tls: true
-  servername: 'www.paypal.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'StvqZwmo9OZKdjPrQiXEPZVQm46vq2DQLtglyVGeFwo'
-  network: 'tcp'
-- type: 'vless'
-  name: 'JP-1'
-  server: '45.152.65.107'
-  port: 8305
-  uuid: '77fcd8db-b66f-4caf-92aa-3c3d9b6b846a'
-  encryption: ''
-  tls: true
-  servername: 'www.paypal.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'bIHSWHT2OWRGlNYwb8ZOp8bQur01tlUe_heQ03bAdSk'
-  network: 'tcp'
-- type: 'vless'
-  name: 'JP-2'
-  server: '207.57.133.221'
-  port: 4815
-  uuid: '462c6593-54d0-410c-8464-088a8affd75f'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'toqN3-gRGsuegqtfwm4lu7CMQvvytYJPwdldFyqLYEQ'
-  network: 'tcp'
-- type: 'vless'
-  name: 'JP-3'
-  server: '83.229.127.18'
-  port: 27948
-  uuid: '7010c0c4-ac62-4456-9f40-fead039d2be5'
-  encryption: ''
-  tls: true
-  servername: 'www.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'ZJbUs5ZBJacR5XKdOKz8rI7ovNMcq0ocdCvsA0Z3ul8'
-  network: 'tcp'
-- type: 'vless'
-  name: 'JP-4'
-  server: '45.144.137.215'
-  port: 29827
-  uuid: '2726dd7f-81fe-4b31-9b9b-e691ee730562'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'aFwfZMfFUyzU8RB_vh3fxtjUxDcQlu4QapSdQH0jG04'
-  network: 'tcp'
-- type: 'vless'
-  name: 'JP-5'
-  server: '45.145.229.198'
-  port: 45838
-  uuid: '01556b48-8cbc-47f6-8967-ff8f46cf7e77'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'uXR_8HuoykVpZgv9r27qlbwUsL8dOIg5wFbnWybA5Fg'
-  network: 'tcp'
-- type: 'vless'
-  name: 'KR-1'
-  server: '68.64.183.115'
-  port: 27684
-  uuid: 'ff7fecdc-f816-4ff7-9447-65ecbae25ec2'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'CTB0zNN-oslyk5a3NfliC_nUakFUn94QH8X_rN5ZvlQ'
-  network: 'tcp'
-- type: 'vless'
-  name: 'KR-2'
-  server: '38.147.171.99'
-  port: 46042
-  uuid: '1e89e68f-eceb-4159-baee-2b77c9d34717'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'BjAkOapbZN6R4cUgz8Ye-o-uyWz6o_LoUlI5kbURMh0'
-  network: 'tcp'
-- type: 'vless'
-  name: 'KR-3'
-  server: '45.145.229.32'
-  port: 47481
-  uuid: '965d4b67-706e-4937-a7c4-c0e03f4b4b37'
-  encryption: ''
-  tls: true
-  servername: 'www.paypal.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'mBoopmF9JfhJzKygTCLMJOfBmC8OQvNsuI46UUDD2Qw'
-  network: 'tcp'
-- type: 'vless'
-  name: 'KR-4'
-  server: '45.152.65.129'
-  port: 11563
-  uuid: 'd949020f-6ec6-455a-819b-7d7b32f9ff14'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'WzLRxXsO23hehh3gwGkVYfGpAW_tV0QOpfza_Os5Cgg'
-  network: 'tcp'
-- type: 'vless'
-  name: 'KR-5'
-  server: '68.64.183.164'
-  port: 14163
-  uuid: '8871f4a9-cb90-4159-b3d0-84b90efdd3ca'
-  encryption: ''
-  tls: true
-  servername: 'www.paypal.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '40j_uKu51A06ECDlinwC6Q7h7ZPWs9Bkv24_EZdcvnQ'
-  network: 'tcp'
-- type: 'vless'
-  name: 'SG-1'
-  server: '207.57.135.37'
-  port: 58979
-  uuid: '99385d38-676e-4e21-8de5-bd3b0b57e2b6'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'BMGv1azVuzaXicmRgvGIbDdRv-9tIjfvtSCKRh1EfVw'
-  network: 'tcp'
-- type: 'vless'
-  name: 'SG-2'
-  server: '207.57.134.242'
-  port: 59672
-  uuid: 'd1ac7eb4-a6fd-481b-8c91-5c40680af484'
-  encryption: ''
-  tls: true
-  servername: 'www.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'MyT8CmpFM5SbEol-rsH-Gm-I8GJLAfRLQnGnyNCXrho'
-  network: 'tcp'
-- type: 'vless'
-  name: 'SG-3'
-  server: '207.57.121.65'
-  port: 16726
-  uuid: '16e074a9-2489-4dd2-9eba-9f783e950b31'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'Q4ZKxZyCgFw5odhLQpntELcGnSFjefn_pJBgPYV3CXM'
-  network: 'tcp'
-- type: 'vless'
-  name: 'SG-4'
-  server: '103.143.81.124'
-  port: 3139
-  uuid: '87ecd928-9831-416a-bf4d-25e441ffb4cf'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'RYrYabqY07TQmF41ouUnBSjA6pDhUN4Ms7OKY-KrKh0'
-  network: 'tcp'
-- type: 'vless'
-  name: 'US-1'
-  server: '103.143.81.60'
-  port: 54030
-  uuid: '322c0364-b447-45c2-a27c-250376170dc0'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '1kifGOu6PhqrZmV4gK1XEmnKsq1Gcr9sqJYw4SQxujY'
-  network: 'tcp'
-- type: 'vless'
-  name: 'US-2'
-  server: '207.57.128.108'
-  port: 35559
-  uuid: '6d7deb4c-d700-4e0f-bc17-122ccc564f28'
-  encryption: ''
-  tls: true
-  servername: 'www.ebay.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '0BRJ4nv0yLutb5ATRT3WbLgE9Y58udx3PbVOUVbOhkY'
-  network: 'tcp'
-- type: 'vless'
-  name: 'US-3'
-  server: '45.145.228.129'
-  port: 3077
-  uuid: '308afb3e-b0ce-41c8-9987-4023161fac75'
-  encryption: ''
-  tls: true
-  servername: 'aws.amazon.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: '48zW4lXrGFUEbsQ1JSRrv2yLzmxMsWYSk9KACEG_eFk'
-  network: 'tcp'
-- type: 'vless'
-  name: 'US-4'
-  server: '193.134.211.12'
-  port: 40229
-  uuid: 'fd33946a-ad66-48bb-bece-36a19009a20e'
-  encryption: ''
-  tls: true
-  servername: 'www.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE'
-  network: 'tcp'
-- type: 'vless'
-  name: 'US-5'
-  server: '207.57.129.114'
-  port: 14934
-  uuid: '630b700b-3c91-463a-9ef5-ee01f5848b45'
-  encryption: ''
-  tls: true
-  servername: 'dash.cloudflare.com'
-  flow: 'xtls-rprx-vision'
-  client-fingerprint: 'chrome'
-  reality-opts:
-    public-key: 'C9qIqeSCAkCLIqki3n21hyeILLltWcZJ6M0HgRTGmk4'
-  network: 'tcp'
+  - type: anytls
+    name: 香港
+    server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 美国
+    server: awefd2313fefarg23fr24.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 新加坡
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 德国
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 英国
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 法国
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 日本
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 加拿大
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 巴西
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 韩国
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 意大利
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 挪威
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 瑞典
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 澳大利亚
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 印度
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 乌克兰
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 墨西哥
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 俄罗斯
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 新西兰
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 马来西亚
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 泰国
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 菲律宾
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 西班牙
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 瑞士
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 阿联酋
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 爱尔兰
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: anytls
+    name: 印尼
+    server: 6ivh.pnuqcnp.cn
+    port: 443
+    udp: true
+    password: 9sK2mP8xQ7vL3nZ6
+    sni: images.ctfassets.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    skip-cert-verify: true
+
+  - type: vless
+    name: AU-1
+    server: 207.57.133.51
+    port: 29896
+    uuid: 3767d445-9012-4f95-90ee-b5f15301dfe0
+    encryption: ''
+    tls: true
+    servername: www.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: k_rgz9OgfRvruve7uGVmd8tHbDxS1h_Yh9C7FL2qHls
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: AU-2
+    server: 207.57.135.28
+    port: 27659
+    uuid: ecee6ef1-5172-4543-bf81-e4aaf64db01c
+    encryption: ''
+    tls: true
+    servername: www.paypal.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: AU-3
+    server: 45.152.65.68
+    port: 37574
+    uuid: e2353f83-9a40-4b46-82e1-666b1652d479
+    encryption: ''
+    tls: true
+    servername: www.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: AU-4
+    server: 45.152.66.160
+    port: 2581
+    uuid: 600d0970-77e5-4b57-8a88-a5b623c5a3d7
+    encryption: ''
+    tls: true
+    servername: www.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: sJMVQ27QqDnyTPtHC02hVfJK1Ot42YsyLm47eHnLgV8
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: AU-5
+    server: 68.64.183.49
+    port: 50045
+    uuid: 72f59ca4-df5d-4ab1-af97-3e0a10ba56fd
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cxzKVlA9i0WAztJ9QJ0v4nactMJKLXDyzJd00hBFGQ4
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: CN-1
+    server: www.microsoft.com
+    port: 443
+    uuid: 8f9dc380-fa9e-46e1-93c5-016987cbd17c
+    encryption: ''
+    tls: true
+    servername: microsoft.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: TsUbtUAeEG2WvSJaS-LOnI9Zx8i-QWI8bfvI212caG4
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: DE-1
+    server: 207.57.135.42
+    port: 30852
+    uuid: 10fdf9ce-3304-47cf-874b-9a3be30d5030
+    encryption: ''
+    tls: true
+    servername: www.paypal.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HN9gCD2plpOr5jSNJfv9Xcl2Zjj-AKvfbNmLBNYWcUc
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: DE-2
+    server: 207.57.135.124
+    port: 2128
+    uuid: 630630d0-35eb-41b1-a7e9-90ca7e5c897f
+    encryption: ''
+    tls: true
+    servername: www.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0zFniJLY80LQ5zKKB-X6r-tpHgAI6yqUVxJFQGG9SUM
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: DE-3
+    server: 193.134.211.247
+    port: 29417
+    uuid: 1c1d0af7-c77b-4fb2-a1a4-fac03cc6c483
+    encryption: ''
+    tls: true
+    servername: www.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: n9zqA9DrsO1bHnC_e2_e9MAxpyPdC_EA06Dm_rw4oWY
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: DE-4
+    server: 68.64.183.179
+    port: 53517
+    uuid: 0473ce6d-65e6-4ee2-a030-9e7a006f7921
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rlAsfb-BXMZTnJpvvDrVkP-FO7Ll4-7sWVDPD7GThX4
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: DE-5
+    server: 45.145.228.155
+    port: 2574
+    uuid: 032b96c6-752f-4cff-88d1-fad817b0dad3
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: JXdqcykVt3Ue2ToOemH_AHoZUnQKbGIzaUmeZY7o32Y
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: FR-1
+    server: 68.64.180.201
+    port: 35957
+    uuid: ebc2c010-91e2-491d-875b-81de66a01590
+    encryption: ''
+    tls: true
+    servername: www.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 79XmdoMC-YDcAhXMX6TGYfajcPWxVTSwIpbP0-QdMV8
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: FR-2
+    server: 68.64.182.58
+    port: 44407
+    uuid: 7c14a115-019f-4d67-8c7c-6f6814fb5610
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1jRHait01lfgKnhfctcvx6EbGtvBxyZyi4JMcIl3qzI
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: FR-3
+    server: 207.57.133.53
+    port: 51135
+    uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: GB-1
+    server: 45.145.229.184
+    port: 29680
+    uuid: a6eae9b3-15eb-455f-a5f1-b73b2d304a32
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PcmyuWGLbzBiTAqTuui0FSq3DUa6SIXzbDFARaeV23U
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: GB-2
+    server: 38.207.177.203
+    port: 24681
+    uuid: 5d2a0ea5-9563-4778-aed4-c97ec0e5f2a8
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: t-BhtrNH7C1zTuLOuBu4tXeIv3JR-cN88pVFywIkti4
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: GB-3
+    server: 68.64.180.244
+    port: 14738
+    uuid: 416c5142-667c-4213-a826-02185a3030b3
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 9fmJUGDBBcdT0WITLiZtF7mKKDnzfQ8kvBj0r5nIZyc
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: GB-4
+    server: 207.57.131.82
+    port: 42038
+    uuid: 451ae20e-adca-4d00-bf12-9572f58f181b
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uK4Syxig1VpR42JEkbld2ZIaymNkt5MW4UMt21LsaRA
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: GB-5
+    server: 45.152.66.168
+    port: 27906
+    uuid: c1cbaa45-23ad-4113-8d9f-c66ec5ec3960
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zw-86s4VfPvHEbmPeIA_0U0rFYiNlkmR9ky2y23fvWk
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: HK-1
+    server: 207.57.131.116
+    port: 60156
+    uuid: d42830a2-4a5f-4f55-bd01-fc3d2651505e
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0WCIcNPaAc_UqgQmKptY2vvQKSCjz7LkoG6YEgtzuFs
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: HK-2
+    server: 207.57.133.55
+    port: 2084
+    uuid: 1b2bea38-961b-4e00-a6a2-d2065c4f1d32
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: My-6-pYesZLk3VntObe0KlYjiIqsLGvNN9KQ8FDPjAA
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: HK-3
+    server: 45.145.229.234
+    port: 45905
+    uuid: 83de2a89-7b91-47ca-8305-5d8acf48025a
+    encryption: ''
+    tls: true
+    servername: www.paypal.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: StvqZwmo9OZKdjPrQiXEPZVQm46vq2DQLtglyVGeFwo
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: JP-1
+    server: 45.152.65.107
+    port: 8305
+    uuid: 77fcd8db-b66f-4caf-92aa-3c3d9b6b846a
+    encryption: ''
+    tls: true
+    servername: www.paypal.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: bIHSWHT2OWRGlNYwb8ZOp8bQur01tlUe_heQ03bAdSk
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: JP-2
+    server: 207.57.133.221
+    port: 4815
+    uuid: 462c6593-54d0-410c-8464-088a8affd75f
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: toqN3-gRGsuegqtfwm4lu7CMQvvytYJPwdldFyqLYEQ
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: JP-3
+    server: 83.229.127.18
+    port: 27948
+    uuid: 7010c0c4-ac62-4456-9f40-fead039d2be5
+    encryption: ''
+    tls: true
+    servername: www.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZJbUs5ZBJacR5XKdOKz8rI7ovNMcq0ocdCvsA0Z3ul8
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: JP-4
+    server: 45.144.137.215
+    port: 29827
+    uuid: 2726dd7f-81fe-4b31-9b9b-e691ee730562
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: aFwfZMfFUyzU8RB_vh3fxtjUxDcQlu4QapSdQH0jG04
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: JP-5
+    server: 45.145.229.198
+    port: 45838
+    uuid: 01556b48-8cbc-47f6-8967-ff8f46cf7e77
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: uXR_8HuoykVpZgv9r27qlbwUsL8dOIg5wFbnWybA5Fg
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: KR-1
+    server: 68.64.183.115
+    port: 27684
+    uuid: ff7fecdc-f816-4ff7-9447-65ecbae25ec2
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CTB0zNN-oslyk5a3NfliC_nUakFUn94QH8X_rN5ZvlQ
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: KR-2
+    server: 38.147.171.99
+    port: 46042
+    uuid: 1e89e68f-eceb-4159-baee-2b77c9d34717
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: BjAkOapbZN6R4cUgz8Ye-o-uyWz6o_LoUlI5kbURMh0
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: KR-3
+    server: 45.145.229.32
+    port: 47481
+    uuid: 965d4b67-706e-4937-a7c4-c0e03f4b4b37
+    encryption: ''
+    tls: true
+    servername: www.paypal.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mBoopmF9JfhJzKygTCLMJOfBmC8OQvNsuI46UUDD2Qw
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: KR-4
+    server: 45.152.65.129
+    port: 11563
+    uuid: d949020f-6ec6-455a-819b-7d7b32f9ff14
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WzLRxXsO23hehh3gwGkVYfGpAW_tV0QOpfza_Os5Cgg
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: KR-5
+    server: 68.64.183.164
+    port: 14163
+    uuid: 8871f4a9-cb90-4159-b3d0-84b90efdd3ca
+    encryption: ''
+    tls: true
+    servername: www.paypal.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 40j_uKu51A06ECDlinwC6Q7h7ZPWs9Bkv24_EZdcvnQ
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: SG-1
+    server: 207.57.135.37
+    port: 58979
+    uuid: 99385d38-676e-4e21-8de5-bd3b0b57e2b6
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: BMGv1azVuzaXicmRgvGIbDdRv-9tIjfvtSCKRh1EfVw
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: SG-2
+    server: 207.57.134.242
+    port: 59672
+    uuid: d1ac7eb4-a6fd-481b-8c91-5c40680af484
+    encryption: ''
+    tls: true
+    servername: www.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: MyT8CmpFM5SbEol-rsH-Gm-I8GJLAfRLQnGnyNCXrho
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: SG-3
+    server: 207.57.121.65
+    port: 16726
+    uuid: 16e074a9-2489-4dd2-9eba-9f783e950b31
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Q4ZKxZyCgFw5odhLQpntELcGnSFjefn_pJBgPYV3CXM
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: SG-4
+    server: 103.143.81.124
+    port: 3139
+    uuid: 87ecd928-9831-416a-bf4d-25e441ffb4cf
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RYrYabqY07TQmF41ouUnBSjA6pDhUN4Ms7OKY-KrKh0
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: US-1
+    server: 103.143.81.60
+    port: 54030
+    uuid: 322c0364-b447-45c2-a27c-250376170dc0
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1kifGOu6PhqrZmV4gK1XEmnKsq1Gcr9sqJYw4SQxujY
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: US-2
+    server: 207.57.128.108
+    port: 35559
+    uuid: 6d7deb4c-d700-4e0f-bc17-122ccc564f28
+    encryption: ''
+    tls: true
+    servername: www.ebay.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 0BRJ4nv0yLutb5ATRT3WbLgE9Y58udx3PbVOUVbOhkY
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: US-3
+    server: 45.145.228.129
+    port: 3077
+    uuid: 308afb3e-b0ce-41c8-9987-4023161fac75
+    encryption: ''
+    tls: true
+    servername: aws.amazon.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 48zW4lXrGFUEbsQ1JSRrv2yLzmxMsWYSk9KACEG_eFk
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: US-4
+    server: 193.134.211.12
+    port: 40229
+    uuid: fd33946a-ad66-48bb-bece-36a19009a20e
+    encryption: ''
+    tls: true
+    servername: www.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE
+    network: tcp
+    udp: true
+
+  - type: vless
+    name: US-5
+    server: 207.57.129.114
+    port: 14934
+    uuid: 630b700b-3c91-463a-9ef5-ee01f5848b45
+    encryption: ''
+    tls: true
+    servername: dash.cloudflare.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: C9qIqeSCAkCLIqki3n21hyeILLltWcZJ6M0HgRTGmk4
+    network: tcp
+    udp: true
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - 香港
+      - 美国
+      - 新加坡
+      - 德国
+      - 英国
+      - 法国
+      - 日本
+      - 加拿大
+      - 巴西
+      - 韩国
+      - 意大利
+      - 挪威
+      - 瑞典
+      - 澳大利亚
+      - 印度
+      - 乌克兰
+      - 墨西哥
+      - 俄罗斯
+      - 新西兰
+      - 马来西亚
+      - 泰国
+      - 菲律宾
+      - 西班牙
+      - 瑞士
+      - 阿联酋
+      - 爱尔兰
+      - 印尼
+      - AU-1
+      - AU-2
+      - AU-3
+      - AU-4
+      - AU-5
+      - CN-1
+      - DE-1
+      - DE-2
+      - DE-3
+      - DE-4
+      - DE-5
+      - FR-1
+      - FR-2
+      - FR-3
+      - GB-1
+      - GB-2
+      - GB-3
+      - GB-4
+      - GB-5
+      - HK-1
+      - HK-2
+      - HK-3
+      - JP-1
+      - JP-2
+      - JP-3
+      - JP-4
+      - JP-5
+      - KR-1
+      - KR-2
+      - KR-3
+      - KR-4
+      - KR-5
+      - SG-1
+      - SG-2
+      - SG-3
+      - SG-4
+      - US-1
+      - US-2
+      - US-3
+      - US-4
+      - US-5
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
