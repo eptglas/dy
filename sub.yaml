@@ -46,334 +46,78 @@ proxies:
       - http/1.1
     client-fingerprint: chrome
     skip-cert-verify: true
-  - name: '香港(HK)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
+  - type: 'anytls'
+    name: '星链加速器56481.df6h451rh.xin'
+    server: '56481.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '美国(US)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
+    udp: true
+    password: '6725d134ee80'
+    sni: 'images.ctfassets.net'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '星链加速器98416548.df6h451rh.xin'
+    server: '98416548.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '新加坡(SG)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
+    udp: true
+    password: '6725d134ee80'
+    sni: 'images.ctfassets.net'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '星链加速器684616s4.df6h451rh.xin'
+    server: '684616s4.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '德国(DE)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
+    udp: true
+    password: '9sK2mP8xQ7vL3nZ6'
+    sni: 'px.ads.linkedin.com'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '坚果加速器56481.df6h451rh.xin'
+    server: '56481.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '英国(GB)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
+    udp: true
+    password: '6725d134ee80'
+    sni: 'images.ctfassets.net'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '坚果加速器98416548.df6h451rh.xin'
+    server: '98416548.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '法国(FR)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
+    udp: true
+    password: '6725d134ee80'
+    sni: 'images.ctfassets.net'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '坚果加速器684616s4.df6h451rh.xin'
+    server: '684616s4.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '日本(JP)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '加拿大(CA)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '巴西(BR)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '韩国(KR)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '意大利(IT)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '挪威(NO)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '瑞典(SE)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '澳大利亚(AU)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '印度(IN)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '乌克兰(UA)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '墨西哥(MX)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '俄罗斯(RU)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '新西兰(NZ)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '马来西亚(MY)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '泰国(TH)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '菲律宾(PH)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '西班牙(ES)'
-    type: 'vmess'
-    server: '654168416355441.oylfmxz.cn'
-    port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '654168416355441.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '654168416355441.oylfmxz.cn'
-  - name: '瑞士(CH)'
+    udp: true
+    password: '9sK2mP8xQ7vL3nZ6'
+    sni: 'px.ads.linkedin.com'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - name: '黑洞加速器24864168545164.oylfmxz.cn'
     type: 'vmess'
     server: '24864168545164.oylfmxz.cn'
     port: 443
     cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
+    uuid: 'c89e4cd4-62c1-46e1-8a02-8e1270fc8617'
     tls: true
     alterId: 0
     servername: '24864168545164.oylfmxz.cn'
@@ -382,48 +126,53 @@ proxies:
       path: '/'
       headers:
         Host: '24864168545164.oylfmxz.cn'
-  - name: '阿联酋(AE)'
+  - name: '火箭加速器654168416355441.d6f54hd1j.cc'
     type: 'vmess'
-    server: '24864168545164.oylfmxz.cn'
+    server: '654168416355441.d6f54hd1j.cc'
     port: 443
     cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
+    uuid: 'b5b48f15-22ec-467c-bbd6-0c3f90a67e36'
     tls: true
     alterId: 0
-    servername: '24864168545164.oylfmxz.cn'
+    servername: '654168416355441.d6f54hd1j.cc'
     network: 'ws'
     ws-opts:
       path: '/'
       headers:
-        Host: '24864168545164.oylfmxz.cn'
-  - name: '爱尔兰(IE)'
-    type: 'vmess'
-    server: '24864168545164.oylfmxz.cn'
+        Host: '654168416355441.d6f54hd1j.cc'
+  - type: 'anytls'
+    name: '猎豹加速器654968169.df6h451rh.xin'
+    server: '654968169.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '24864168545164.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '24864168545164.oylfmxz.cn'
-  - name: '印尼(ID)'
-    type: 'vmess'
-    server: '24864168545164.oylfmxz.cn'
+    udp: true
+    password: '6725d134ee80'
+    sni: 'images.ctfassets.net'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '猎豹加速器98416548.df6h451rh.xin'
+    server: '98416548.df6h451rh.xin'
     port: 443
-    cipher: 'auto'
-    uuid: 'd90e4077-bc7e-414d-a650-70bf1baae4d6'
-    tls: true
-    alterId: 0
-    servername: '24864168545164.oylfmxz.cn'
-    network: 'ws'
-    ws-opts:
-      path: '/'
-      headers:
-        Host: '24864168545164.oylfmxz.cn'
+    udp: true
+    password: '6725d134ee80'
+    sni: 'images.ctfassets.net'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
+  - type: 'anytls'
+    name: '猎豹加速器684616s4.df6h451rh.xin'
+    server: '684616s4.df6h451rh.xin'
+    port: 443
+    udp: true
+    password: '9sK2mP8xQ7vL3nZ6'
+    sni: 'px.ads.linkedin.com'
+    alpn:
+      - 'http/1.1'
+    client-fingerprint: 'chrome'
+    skip-cert-verify: true
 
 rules:
   - GEOIP,CN,DIRECT
